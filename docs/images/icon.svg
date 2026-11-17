@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">reply-language icon: a speech bubble holding the character 中 with a check mark</title>
+  <rect width="128" height="128" rx="28" fill="#0d1117"/>
+  <rect x="0.75" y="0.75" width="126.5" height="126.5" rx="27.25" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M28 30h72a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H58l-18 16V90H28a10 10 0 0 1-10-10V40a10 10 0 0 1 10-10z" fill="#D97757"/>
+  <text x="64" y="76" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif" font-size="42" font-weight="700" fill="#ffffff">中</text>
+  <circle cx="100" cy="94" r="16" fill="#3fb950" stroke="#0d1117" stroke-width="4"/>
+  <path d="M92 94l6 6 11-12" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

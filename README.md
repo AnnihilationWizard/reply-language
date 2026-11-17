@@ -1,6 +1,10 @@
 # reply-language
 
 <p align="center">
+  <img src="docs/images/icon.svg" width="96" height="96" alt="reply-language icon: a speech bubble holding 中 with a check mark">
+</p>
+
+<p align="center">
   <strong>Replies stay in Traditional Chinese.</strong><br>
   A Claude Code Stop hook that sends a reply written mostly in English back to Claude, to rewrite in Traditional Chinese with Taiwan terminology.
 </p>
@@ -115,7 +119,7 @@ Run `claude --plugin-dir .` to try changes. A change reaches installed copies on
 ```text
 .claude-plugin/   plugin.json manifest and marketplace.json
 hooks/            hooks.json, the Stop hook script and its tests
-docs/images/      README illustration
+docs/images/      README icon and illustration
 ```
 
 ## Contributing
