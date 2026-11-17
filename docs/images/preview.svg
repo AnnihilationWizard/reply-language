@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">reply-language before and after</title>
+  <desc id="desc">Left: without reply-language, Claude ends the turn with a reply in English. Right: with reply-language, the Stop hook sends the English reply back, and Claude rewrites the same reply in Traditional Chinese, which passes the check.</desc>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", "PingFang TC", "Noto Sans TC", monospace; font-size: 14px; }
+    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; }
+    .fg { fill: #e6edf3; }
+    .dim { fill: #8b949e; }
+    .tool { fill: #e6edf3; font-weight: 700; }
+    .dot { fill: #3fb950; }
+    .msg { fill: #e6edf3; }
+    .err { fill: #ff7b72; }
+    .warn { fill: #d29922; }
+    .ok { fill: #3fb950; }
+  </style>
+  <rect width="960" height="480" rx="14" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="959" height="479" rx="14" fill="none" stroke="#30363d"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="22" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="22" r="6" fill="#28c840"/>
+  <line x1="480" y1="44" x2="480" y2="456" stroke="#30363d"/>
+
+  <!-- Before -->
+  <text x="32" y="70" class="label" fill="#f85149">BEFORE</text>
+  <g class="mono">
+    <text x="32" y="106" class="dim">&gt; 拉下遠端合併</text>
+    <text x="32" y="146"><tspan class="dot">⏺</tspan><tspan class="tool" dx="8">Bash</tspan><tspan class="fg">(git merge --ff-only origin/main)</tspan></text>
+    <text x="48" y="172" class="dim">⎿  Fast-forward fb72ecb..7ea8ff3</text>
+    <text x="32" y="214"><tspan class="fg">⏺</tspan><tspan class="msg" dx="8">Pulled and merged: main is now at</tspan></text>
+    <text x="54" y="238" class="msg">7ea8ff3, matching origin/main. The</text>
+    <text x="54" y="262" class="msg">working tree is clean.</text>
+  </g>
+  <rect x="32" y="392" width="416" height="40" rx="8" fill="#21262d"/>
+  <text x="48" y="417" class="mono"><tspan class="err">✗</tspan><tspan class="dim" dx="8">You asked in Chinese; the reply is English.</tspan></text>
+
+  <!-- After -->
+  <text x="512" y="70" class="label" fill="#3fb950">AFTER</text>
+  <g class="mono">
+    <text x="512" y="106" class="dim">&gt; 拉下遠端合併</text>
+    <text x="512" y="146"><tspan class="dot">⏺</tspan><tspan class="tool" dx="8">Bash</tspan><tspan class="fg">(git merge --ff-only origin/main)</tspan></text>
+    <text x="528" y="172" class="dim">⎿  Fast-forward fb72ecb..7ea8ff3</text>
+    <text x="512" y="214"><tspan class="fg">⏺</tspan><tspan class="msg" dx="8">Pulled and merged: main is now at …</tspan></text>
+    <text x="528" y="240"><tspan class="dim">⎿  </tspan><tspan class="warn">Stop hook: the reply is mostly English.</tspan></text>
+    <text x="555" y="264" class="warn">Rewrite it in Traditional Chinese.</text>
+    <text x="512" y="306"><tspan class="fg">⏺</tspan><tspan class="msg" dx="8">已拉下遠端並合併：main 快轉到</tspan></text>
+    <text x="534" y="330" class="msg">7ea8ff3，跟 origin/main 一致，</text>
+    <text x="534" y="354" class="msg">工作樹乾淨。</text>
+  </g>
+  <rect x="512" y="392" width="416" height="40" rx="8" fill="#21262d"/>
+  <text x="528" y="417" class="mono"><tspan class="ok">✓</tspan><tspan class="dim" dx="8">Same reply, in Traditional Chinese.</tspan></text>
+</svg>
