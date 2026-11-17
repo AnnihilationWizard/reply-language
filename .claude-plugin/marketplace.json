@@ -1,0 +1,9 @@
+{
+  "name": "reply-language",
+  "description": "A Claude Code hook that keeps replies in Traditional Chinese (Taiwan)",
+  "owner": {
+    "name": "AnnihilationWizard",
+    "url": "https://github.com/AnnihilationWizard"
+  },
+  "plugins": [{ "name": "reply-language", "source": "./" }]
+}

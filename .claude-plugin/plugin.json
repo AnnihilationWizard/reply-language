@@ -1,0 +1,13 @@
+{
+  "name": "reply-language",
+  "version": "1.0.0",
+  "description": "Stop hook that sends a reply written mostly in English back to Claude to rewrite in Traditional Chinese (Taiwan)",
+  "author": {
+    "name": "AnnihilationWizard",
+    "url": "https://github.com/AnnihilationWizard"
+  },
+  "homepage": "https://github.com/AnnihilationWizard/reply-language",
+  "repository": "https://github.com/AnnihilationWizard/reply-language",
+  "license": "MIT",
+  "keywords": ["claude-code", "hook", "stop-hook", "language", "traditional-chinese"]
+}
